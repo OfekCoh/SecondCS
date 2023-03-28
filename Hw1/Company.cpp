@@ -83,13 +83,13 @@ void Company::sortShops(Shop* shops, const int size, const string sortBy)
 	}
 }
 
-void Company::printTheArray(const Shop* shops, const int size) const // help func that prints the array
+void Company::printTheArray() const // help func that prints the array
 {
 	int i;
-	for (i = 0; i < size; i++)  // print the sorted shops array
+	for (i = 0; i < this->shopsNumber; i++)  // print the sorted shops array
 	{
 		cout << "Shop #" << i + 1 << " :\n";
-		shops[i].print();
+		this->shops[i].print();
 		cout << "\n";
 	}
 }
